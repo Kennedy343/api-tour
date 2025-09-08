@@ -21,7 +21,7 @@ export class ToursController {
   @CheckPolicies((ability) => ability.can(Action.Create, 'Tour'))
   create(@Body() createTourDto: CreateTourDto) {
     return this.toursService.create(createTourDto);
-  }
+  }5
 
   @Get()
   @CheckPolicies((ability) => ability.can(Action.Read, 'Tour'))
